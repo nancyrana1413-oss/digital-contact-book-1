@@ -1,0 +1,16 @@
+contacts = {}
+
+print("Digital Contact Book")
+
+for i in range(3):
+    name = input("Enter contact name: ")
+    number = input("Enter phone number: ")
+
+    contacts[name] = number
+
+search = input("\nEnter the name you want to search: ")
+
+if search in contacts:
+    print("Phone Number:", contacts[search])
+else:
+    print("Contact not found")
